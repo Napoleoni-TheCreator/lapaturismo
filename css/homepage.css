@@ -25,17 +25,18 @@ nav {
     justify-content: flex-end;
 }
 
-li {
+ul {
+    list-style-type: none;
     width: 100%;
     font-size: 120%;
     display: flex;
     justify-content: space-between;
 }
 
-ul,
 a {
     text-decoration: none;
     color: black;
+    
 }
 
 main {

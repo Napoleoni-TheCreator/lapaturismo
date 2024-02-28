@@ -1,0 +1,48 @@
+/* estilo.css */
+
+/* Estilize o cabeçalho */
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilize os pontos turísticos */
+.ponto-turistico {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilize as imagens */
+.ponto-turistico img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.santuario_text  {
+width: 20%;
+text-wrap: wrap;
+margin-left: 30px;
+
+}
+
+
+
+/* Estilize os títulos */
+h1, h2 {
+    color: #333;
+}
+
+/* Estilize o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

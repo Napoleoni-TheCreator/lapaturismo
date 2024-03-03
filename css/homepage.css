@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: auto;
+}
+
+
+/*HEADER DO SITE*/
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    z-index: 1;
+    /*dando valor para que nao seja sobreposto pelo Slider*/
+}
+
+.scrolled {
+    transition: 1s;
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    font-size: 120%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/*MAIN DO SITE*/
+
+
+main {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Slider-Banner {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    height: 1000px;
+}
+
+.slides {
+    width: 400%;
+    height: 1000px;
+    display: flex;
+}
+
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.manual-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgba(255, 255, 255, 0);
+    padding: 5px;
+    border-radius: 10px;
+    /*cursor: pointer;*/
+
+}
+
+/*aplica em todos menos no ultimo*/
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+/*passar o mouse em cima*/
+.manual-btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* define ele como primeiro enquanto ativo*/
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+/*vai empurrar o 1o e repor seu lugar*/
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+/*navigation-auto é basicamente o fundo dos botoes*/
+.nav-auto div {
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    /*cursor: pointer;*/
+
+}
+
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+/*quando botao for clicado, seu fundo fica branco*/
+#radio1:checked~.nav-auto .btn-1 {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#radio2:checked~.nav-auto .btn-2 {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#radio3:checked~.nav-auto .btn-3 {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#radio4:checked~.nav-auto .btn-4 {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.Container-Categorias {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Bloco-categoria {
+    width: 400px;
+    height: 300px;
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.coisa {
+    height: 1000px;
+}
+
+
+/*FOOTER DO SITE*/
+
+
+footer {
+    height: 110px;
+    background-color: brown;
+    font-size: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*AJUSTES DE RESPONSIVIDADE*/
+
+@media(max-width:600px) {
+
+    header{
+        position: relative;
+    }
+
+    .Bloco-categoria {
+        width: 200px;
+        height: 150px;
+        font-size: 100%;
+    }
+
+    .Slider-Banner, .slides{
+
+        height: 300px;
+    }
+
+
+}

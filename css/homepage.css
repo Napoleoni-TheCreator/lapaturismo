@@ -16,32 +16,36 @@ header {
     position: fixed;
     height: 100px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(16, 100, 23, 0);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     z-index: 1;
     /*dando valor para que nao seja sobreposto pelo Slider*/
 }
 
-.scrolled {
-    transition: 1s;
-    background-color: rgb(255, 255, 255);
+header h1 {
+    color: rgb(238, 238, 14);
+    font-family: cursive;
 }
 
-nav {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
+.scrolled {
+    transition: 1s;
+    background-color: rgba(30, 133, 30, 0.95);
 }
+
+
 
 ul {
     list-style-type: none;
-    width: 100%;
+    width: auto;
     font-size: 120%;
     display: flex;
-    justify-content: space-between;
+}
+
+li {
+    margin-left: 30px;
 }
 
 a {
@@ -54,7 +58,7 @@ a {
 
 
 main {
-    background-color: aquamarine;
+    background-color: rgb(239, 239, 239);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,22 +177,34 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .Bloco-categoria {
     width: 400px;
     height: 300px;
-    background-color: chartreuse;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 120%;
+    font-weight: 700;
+    color: blue;
     border-radius: 5px;
     margin: 5px;
 }
 
-.coisa {
-    height: 1000px;
+.container-sn {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-sn{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(171, 203, 194);
 }
 
 
@@ -197,7 +213,7 @@ main {
 
 footer {
     height: 110px;
-    background-color: brown;
+    background-color: rgb(132, 72, 29);
     font-size: 120%;
     display: flex;
     align-items: center;
@@ -206,10 +222,16 @@ footer {
 
 /*AJUSTES DE RESPONSIVIDADE*/
 
-@media(max-width:600px) {
+@media(max-width:900px) {
 
-    header{
+    header {
         position: relative;
+        background-image: linear-gradient(to left bottom, rgb(0, 132, 0), rgba(1, 36, 0, 0.800))
+    }
+
+    header ul {
+
+        display: none;
     }
 
     .Bloco-categoria {
@@ -218,9 +240,11 @@ footer {
         font-size: 100%;
     }
 
-    .Slider-Banner, .slides{
+    .Slider-Banner,
+    .slides {
 
         height: 300px;
+
     }
 
 

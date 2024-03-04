@@ -25,13 +25,19 @@ header {
 }
 
 header h1 {
-    color: rgb(238, 238, 14);
+    color: rgb(255, 255, 255);
     font-family: cursive;
+    text-shadow: 1px 1px 1px black;
 }
 
 .scrolled {
     transition: 1s;
-    background-color: rgba(30, 133, 30, 0.95);
+    background-color: rgb(21, 144, 21);
+}
+
+.scrolled h1{
+    color: yellow;
+    transition: 1s;
 }
 
 
@@ -206,13 +212,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin-top: 20px;
+    
 
 }
 
 .block-sn {
     width: 80%;
-    border: 1px solid gray;
+    border-top: 1px solid gray;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -235,17 +242,39 @@ main {
 }
 
 
+.Container-coment{
+
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 30px 0;
+    border-top: 1px solid gray;
+    
+}
+
+.Container-coment p{
+    text-align: center;
+}
+
+
+
+
 /*FOOTER DO SITE*/
 
 
 footer {
     height: 110px;
-    background-color: rgb(99, 55, 23);
+    background-color: rgb(44, 42, 40);
     font-size: 120%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
 
 /*AJUSTES DE RESPONSIVIDADE*/
 

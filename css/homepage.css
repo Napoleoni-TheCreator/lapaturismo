@@ -27,7 +27,7 @@ header {
 header h1 {
     color: rgb(36, 96, 181);
     font-family: cursive;
-    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 
 .scrolled {

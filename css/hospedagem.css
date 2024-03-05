@@ -4,3 +4,55 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: aqua;
+    width: 100%;
+    height: 100px;
+}
+
+header h1{
+    font-family: cursive, arial;
+
+}
+
+main{
+    height: 800px;
+    background-color: rgb(224, 224, 224);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: red;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+}
+
+
+
+.Text-Intro{
+    background-color: cadetblue;
+    height: 20%; /*200px*/
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.Text-Intro p,h2{
+    margin-top: 30px;
+    text-align: center;
+}

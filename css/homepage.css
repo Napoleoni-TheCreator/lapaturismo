@@ -25,18 +25,18 @@ header {
 }
 
 header h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(36, 96, 181);
     font-family: cursive;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
 }
 
 .scrolled {
     transition: 1s;
-    background-color: rgb(21, 144, 21);
+    background-color: rgb(46, 46, 46);
 }
 
-.scrolled h1{
-    color: yellow;
+.scrolled h1 {
+    color: rgb(255, 255, 255);
     transition: 1s;
 }
 
@@ -75,6 +75,7 @@ main {
     overflow: hidden;
     width: 100%;
     height: 1000px;
+    margin-bottom: 20px;
 }
 
 .slides {
@@ -185,11 +186,20 @@ main {
     align-items: center;
 }
 
+
+#Titulo-Categorias {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+
 .Bloco-categoria {
     width: 400px;
     height: 300px;
     background-color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 120%;
@@ -202,9 +212,10 @@ main {
 
 .Bloco-categoria a {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(48, 142, 76);
+    color: rgb(0, 50, 121);
 
 }
+
 
 .container-sn {
     height: auto;
@@ -213,7 +224,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    
+
 
 }
 
@@ -231,6 +242,7 @@ main {
 .block-sn h2 {
     font-size: 300%;
     margin-bottom: 40px;
+    font-weight: bold;
 
 }
 
@@ -242,7 +254,7 @@ main {
 }
 
 
-.Container-coment{
+.Container-coment {
 
     width: 80%;
     height: auto;
@@ -252,10 +264,10 @@ main {
     align-items: center;
     margin: 20px 0 30px 0;
     border-top: 1px solid gray;
-    
+
 }
 
-.Container-coment p{
+.Container-coment p {
     text-align: center;
 }
 
@@ -271,6 +283,7 @@ footer {
     font-size: 120%;
     display: flex;
     align-items: center;
+    color: rgb(255, 255, 255);
     justify-content: center;
 }
 
@@ -280,9 +293,11 @@ footer {
 
 @media(max-width:900px) {
 
+
+
     header {
         position: relative;
-        background-image: linear-gradient(to left bottom, rgb(0, 132, 0), rgba(1, 36, 0, 0.800))
+        background-color: rgb(46, 46, 46);
     }
 
     header ul {
@@ -316,5 +331,6 @@ footer {
     .block-sn {
         width: 100%;
     }
+
 
 }

@@ -12,50 +12,44 @@ header {
     text-align: center;
 }
 
-/* Estilize os pontos turísticos */
-.ponto-turistico {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
+#ponto-turistico > div {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-/* Estilize as imagens */
-.ponto-turistico img {
-    max-width: 100%;
-    height: auto;
-
+.turismo img{
+    width: 600px;
+    height: 400px;
 }
 
-.img-turismo {
-
-    width: 50%;
-    height: 100%;
-
-
-}
-
-
-.img-turismo img {
-
-    width: 100%;
-    height: 100%;
-}
-
-
-
-.santuario_text {
-    width: 100%;
-    height: 100%;
-    text-wrap: wrap;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
+.detalhes {
+    display: none;
     
-
 }
+.container:target .detalhes{ 
+    display: block;
+}
+
+.turismo:target .detalhes{
+    display: block;
+}
+
+
+#ponto-turistico .turismo:target{
+    position: fixed;
+    width: 50%;
+    top: 15px;
+    left:25%;
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
 
 .mapinha{
     width: 100%;
@@ -66,11 +60,7 @@ header {
     width: 100%;
 }
 
-/* Estilize os títulos */
-h1,
-h2 {
-    color: #333;
-}
+
 
 /* Estilize o rodapé */
 footer {

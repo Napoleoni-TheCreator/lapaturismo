@@ -12,36 +12,37 @@ header {
     text-align: center;
 }
 
-#ponto-turistico > div {
+#ponto-turistico>div {
     float: left;
     width: 33%;
     padding: 10px;
     box-sizing: border-box;
 }
 
-.turismo img{
+.turismo img {
     width: 100%;
     height: 400px;
 }
 
 .detalhes {
     display: none;
-    
+
 }
-.container:target .detalhes{ 
+
+.container:target .detalhes {
     display: block;
 }
 
-.turismo:target .detalhes{
+.turismo:target .detalhes {
     display: block;
 }
 
 
-#ponto-turistico .turismo:target{
+#ponto-turistico .turismo:target {
     position: fixed;
     width: 50%;
     top: 15px;
-    left:25%;
+    left: 25%;
     padding: 10px;
     border: solid 1px #333;
     box-shadow: 0 0 25px 10px #000;
@@ -51,12 +52,14 @@ header {
 
 
 
-.mapinha{
+
+
+.mapinha {
     width: 100%;
     height: 30%;
 }
 
-.mapinha iframe{
+.mapinha iframe {
     width: 100%;
 }
 
@@ -70,6 +73,4 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 900px) {
-    
-}
+@media (max-width: 900px) {}

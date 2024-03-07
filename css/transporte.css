@@ -78,14 +78,35 @@ main{
 .blox-map{
     display: none;
     position: fixed;
-    top: 25%;
-    left: 40%;
+    bottom: 10%;
+    left: 35%;
     z-index: 1;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 800px;
+    background-color: #ffffff;
+    border: 1px solid black;
 }
 
-.blox-map iframe{
+.mapa{
+    width: 100%;
+    height: 65%;
+}
+
+.info-transport{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30%;
+}
+
+.info-transport p{
+    margin-top: 10px;
+    font-size: 120%;
+
+}
+
+.mapa iframe{
     width: 100%;
     height: 100%;
 }
@@ -94,3 +115,9 @@ main{
     display: block;
 }
 
+#bloco-fechar{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 120%;
+    height: auto;
+}

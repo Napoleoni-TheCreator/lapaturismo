@@ -15,18 +15,18 @@ window.addEventListener('scroll', function () {
 let cont = 1;
 document.getElementById('radio1').checked = true;
 
-setInterval( function(){
+setInterval(function () {
 
     ProxImg();
-},5000)
+}, 5000)
 
-function ProxImg(){
+function ProxImg() {
     cont++;
-    if(cont>4){
+    if (cont > 4) {
         cont = 1;
     }
 
-    document.getElementById('radio'+cont).checked = true;
+    document.getElementById('radio' + cont).checked = true;
 
 
 }
@@ -40,7 +40,7 @@ const ComentarioPost = document.getElementById('ComentarioPost');
 
 form.addEventListener('submit', (event) => {
 
-/* vai pegar a variavel e evitar o evento padrão */
+    /* vai pegar a variavel e evitar o evento padrão */
     event.preventDefault();
 
     /* criou a variavel P(tag de paragrafo do HTML)*/
